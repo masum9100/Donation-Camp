@@ -6,11 +6,12 @@ import DonationCard from "./DonationCard";
 const Home = () => {
 
     const cards = useLoaderData()
-    console.log(cards)
+    
     return (
         <div>
             <Banner></Banner>
-            <DonationCard cards={cards}></DonationCard>
+            {Array.isArray(cards) && <DonationCard cards={cards}></DonationCard>}
+            
 
         </div>
 

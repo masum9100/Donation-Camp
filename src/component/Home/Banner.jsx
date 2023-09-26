@@ -1,6 +1,12 @@
 
 
 const Banner = () => {
+    
+
+
+
+
+
     return (
         <div className="relative bg-cover" style={{ backgroundImage: "url('/banner.png ')" }}>
                 <div className="absolute inset-0 bg-white opacity-90"></div>

@@ -21,6 +21,8 @@ const Donation = () => {
         setNotFound("You Didn't Donate Yet");
     }
 
+    
+
     return (
         <div className="max-w-screen-xl mx-auto mt-16">
             {notFound ? (

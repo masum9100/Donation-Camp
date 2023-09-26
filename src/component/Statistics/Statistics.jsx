@@ -1,10 +1,16 @@
+import SolidPieChart from "./SolidPieChart";
+
+
+
+
 
 
 const Statistics = () => {
     return (
-        <div>
-            
+        <div className="flex justify-center items-center">
+            <SolidPieChart></SolidPieChart>
         </div>
+        
     );
 };
 

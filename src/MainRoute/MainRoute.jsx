@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "../component/Nav/NavBar";
-import Home from "../component/Home/Home";
+
 
 
 const MainRoute = () => {
     return (
-        <div className="">
+        <div className="max-w-screen-xl mx-auto text-center items-center">
            <NavBar></NavBar>
            <Outlet></Outlet>
            
