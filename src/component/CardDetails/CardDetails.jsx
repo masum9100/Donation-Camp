@@ -18,7 +18,7 @@ const CardDetails = () => {
     
 
     return (
-        <div className="max-w-screen-xl mx-auto mt-24 px-5">
+        <div className="max-w-screen-xl mx-auto mt-16 px-5">
             <OneCard card={card}></OneCard>
 
         </div>

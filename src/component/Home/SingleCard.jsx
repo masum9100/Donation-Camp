@@ -23,7 +23,7 @@ const SingleCard = ({ card }) => {
                     <figure><img src={image} alt="Shoes" /></figure>
                     <div className="text-left m-4">
                         <h2 style={categoryStyle} className="py-1 px-2 bg-slate-500 inline-block rounded">{category}</h2>
-                        <p style={fontColor} className="">{title}</p>
+                        <p style={fontColor} className="mt-2">{title}</p>
                     </div>
                 </div>
             </button>
