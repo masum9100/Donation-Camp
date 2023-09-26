@@ -1,21 +1,24 @@
-import { useLoaderData } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import Banner from "./Banner";
 import DonationCard from "./DonationCard";
 
-
 const Home = () => {
+  const [cards, setCards] = useState([]);
 
-    const cards = useLoaderData()
+  useEffect(() => {
     
-    return (
-        <div>
-            <Banner></Banner>
-            {Array.isArray(cards) && <DonationCard cards={cards}></DonationCard>}
-            
+    fetch("./data.json")
+      .then(response => response.json())
+      .then(data => setCards(data))
+      .catch(error => console.error("Error fetching data:", error));
+  }, []);
 
-        </div>
-
-    );
+  return (
+    <div>
+      <Banner />
+      {Array.isArray(cards) && <DonationCard cards={cards} />}
+    </div>
+  );
 };
 
 export default Home;

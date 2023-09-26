@@ -8,7 +8,7 @@ const Banner = () => {
 
 
     return (
-        <div className="relative bg-cover" style={{ backgroundImage: "url('/banner.png ')" }}>
+        <div className="relative bg-cover " style={{ backgroundImage: "url('../banner.png ')" }}>
                 <div className="absolute inset-0 bg-white opacity-90"></div>
                 <div className="text-center items-center h-screen flex flex-col justify-center relative z-10 max-h-80 max-w-screen-xl mx-auto ">
                     <h1 className="font-bold text-5xl mb-5 px-5">
