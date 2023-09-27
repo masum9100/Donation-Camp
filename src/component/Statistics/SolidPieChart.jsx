@@ -1,7 +1,9 @@
+
 import { PieChart, Pie, Cell, Label } from 'recharts';
 
+
 const SolidPieChart = ({ donationItem }) => {
-    
+
     const data = [
         { name: 'Total', amount: 12, color: '#FF444A' },
         { name: 'Donation done', amount: 5, color: '#82ca9d' }
@@ -57,5 +59,6 @@ const SolidPieChart = ({ donationItem }) => {
         </div>
     );
 };
+
 
 export default SolidPieChart;

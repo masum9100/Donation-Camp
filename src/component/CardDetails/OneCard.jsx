@@ -8,12 +8,12 @@ const OneCard = ({ card }) => {
     const handleAddDonation = () => {
         const addedDonationArray = []
         const donationItems = JSON.parse(localStorage.getItem('donated'))
-        if (!donationItems){
+        if (!donationItems) {
             addedDonationArray.push(card)
             localStorage.setItem('donated', JSON.stringify(addedDonationArray))
             swal("Thank You!", "Your Donation Does Matter!", "success");
         }
-        else{
+        else {
             addedDonationArray.push(...donationItems, card)
             localStorage.setItem('donated', JSON.stringify(addedDonationArray))
             swal("Thank You!", "Your Donation Does Matter!", "success");
@@ -34,8 +34,10 @@ const OneCard = ({ card }) => {
                     Donate ${price}
                 </button>
             </div>
-            <h1 className="text-4xl font-bold mt-7">{title}</h1>
-            <p className="font-normal text-base mt-5">{description}</p>
+            <div className='text-left'>
+                <h1 className="text-4xl font-bold mt-7">{title}</h1>
+                <p className="font-normal text-base mt-5">{description}</p>
+            </div>
         </div>
     );
 };

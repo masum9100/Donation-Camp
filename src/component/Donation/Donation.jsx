@@ -6,6 +6,9 @@ const Donation = () => {
     const [notFound, setNotFound] = useState(false);
     const [seeAll, setSeeAll] = useState(false);
 
+    const numberOfDonationCards = donationItem.length;
+    
+
     useEffect(() => {
         const donationItems = JSON.parse(localStorage.getItem('donated'));
         if (donationItems) {
